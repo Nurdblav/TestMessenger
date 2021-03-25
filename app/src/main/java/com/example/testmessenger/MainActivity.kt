@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         var mButton : Button = findViewById(R.id.button_sign_in)
         mButton.setOnClickListener{
-            val intent2 = Intent(this, ChatsListActivity::class.java)
+            val intent2 = Intent(this, AuthActivity::class.java)
             startActivity(intent2)
         }
     }

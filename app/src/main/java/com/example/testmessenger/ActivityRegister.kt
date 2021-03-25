@@ -74,6 +74,7 @@ class ActivityRegister : AppCompatActivity() {
         var passAcc = (findViewById(R.id.TextPasswordAccept) as EditText).text.toString()
         val EditTextLogin = findViewById(R.id.TextLogin) as EditText
         var loginString = EditTextLogin.text.toString()
+        this.finish()
 //        @GET("check_login/?login=$loginString")
 //        fun searchLogin()
 //        val passIdent = pass==passAcc
