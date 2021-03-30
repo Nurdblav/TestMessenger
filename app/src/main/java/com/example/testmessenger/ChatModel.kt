@@ -1,7 +1,9 @@
 package com.example.testmessenger
 
 import com.google.gson.annotations.SerializedName
+import kotlinx.parcelize.Parcelize
 import java.util.*
+
 
 data class ChatModelList(val data : List<ChatModelItem>)
 
@@ -20,5 +22,9 @@ data class ChatModelItem (
     val cLastMessage : String,
 
     @SerializedName("image")
-    val cImageUrl : String
+    val cImageUrl : String,
+
+    @SerializedName("unchecked")
+    val cUnchecked: Int? = null
 )
+

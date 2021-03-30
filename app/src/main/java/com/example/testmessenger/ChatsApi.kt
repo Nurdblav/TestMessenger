@@ -10,4 +10,8 @@ interface ChatsApi {
     @GET("/get_user_chats/{userId}")
     @Headers("Content-Type: application/json")
     fun getUserChats(@Path("userId") userId: String): Single<ChatModelList>
+
+    @GET("/get_chat_messages/{chatId}")
+    @Headers("Content-Type: application/json")
+    fun getChatsMessages(@Path("chatId") chatId: String): Single<MessageModelList>
 }
