@@ -59,10 +59,10 @@ class ChatsListActivity : AppCompatActivity() {
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe({
                 Log.e("TAG", it.toString())
-                for (model in it.data){
-                    var mChatMini = ChatMini(model.chatId, model.chatName, model.cImageUrl, model.cLastMessage, 0)
+                //for (model in it.data){
+                    //var mChatMini = ChatMini(model.chatId, model.chatName, model.cImageUrl, model.cLastMessage, 0)
 
-                }
+                //}
             },{
 
             })
